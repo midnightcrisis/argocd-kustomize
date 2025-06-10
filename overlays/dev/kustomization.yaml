@@ -6,8 +6,8 @@ namespace: argocd
 resources:
   - ../../base
 
-patchesStrategicMerge:
-  - patches/server-service-clusterip.yaml
-  - patches/argocd-server-ingress.yaml
-  - patches/git-7solutions-secret.yaml
-  - patches/argocd-rbac-cm.yaml
+patches:
+  - path: patches/server-service-clusterip.yaml
+  - path: patches/argocd-server-ingress.yaml
+  - path: patches/git-7solutions-secret.yaml
+  - path: patches/argocd-rbac-cm.yaml
