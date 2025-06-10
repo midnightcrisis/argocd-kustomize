@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: argocd-cm
+  namespace: argocd
+data:
+  # Repositories list optional here if you're using a credential secret
+  repositories: |
+    - url: https://git.7solutions.co.th
+      name: 7solutions
