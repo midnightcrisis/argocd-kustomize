@@ -5,9 +5,9 @@ namespace: argocd
 
 resources:
   - ../../base
+  - patches/git-7solutions-secret.yaml
 
 patches:
   - path: patches/server-service-clusterip.yaml
   - path: patches/argocd-server-ingress.yaml
-  - path: patches/git-7solutions-secret.yaml
   - path: patches/argocd-rbac-cm.yaml
